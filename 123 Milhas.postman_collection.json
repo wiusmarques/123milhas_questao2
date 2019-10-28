@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "661a34e6-0ff7-42ba-8e16-c4c3ea7a1d0a",
+		"name": "123 Milhas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create a new Space",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "A5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/add/parking/space/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"add",
+						"parking",
+						"space",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Space",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/remove/parking/space/B1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"remove",
+						"parking",
+						"space",
+						"B1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Spaces available",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking/space/available",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking",
+						"space",
+						"available"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add car in space",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "board",
+							"value": "XXX-0000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/add/car/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"add",
+						"car",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Value to buy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking/ammount/XXX0000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking",
+						"ammount",
+						"XXX0000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Payment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "board",
+							"value": "XXX-0000",
+							"type": "text"
+						},
+						{
+							"key": "value",
+							"value": "50.00",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/paymant/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"paymant",
+						""
+					],
+					"query": [
+						{
+							"key": "board",
+							"value": "XXX-0000",
+							"disabled": true
+						},
+						{
+							"key": "value",
+							"value": "50.00",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
