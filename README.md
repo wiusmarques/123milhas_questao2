@@ -14,6 +14,8 @@ Para inciar o servidor basta inciar uma instância do servidor do PHP na pasta p
 
 `php -S localhost:8080 -t public/`
 
+e acessaor no navegado a rota http://localhost:8080
+
 ## Rotas disponíveis
 
 Todas as rotas disponíveis pra uso podem ser encotradas no arquivo 123 Milhas.postman_collection.json, basta importar essa configuração no postman para ter acesso a todas as rotas e efetuar testes.
@@ -21,3 +23,4 @@ Todas as rotas disponíveis pra uso podem ser encotradas no arquivo 123 Milhas.p
 Utilize a versão mais recente da aplicação para evitar problemas.
 
  * Postman collection v2.1.0 (recomendado)
+
